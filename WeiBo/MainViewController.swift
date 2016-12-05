@@ -19,11 +19,10 @@ class MainViewController: UITabBarController {
     
     // MARK: - 添加子控件
     private func addChildViewControllers() {
-        print(HomeViewController())
-        createChildViewController(vcName: "HomeViewController", title: "首页", imageName: "tabbar_home")
-        createChildViewController(vcName: "MessageViewController", title: "消息", imageName: "tabbar_message_center")
-        createChildViewController(vcName: "DiscoverViewController", title: "广场", imageName: "tabbar_discover")
-        createChildViewController(vcName: "ProfileViewController", title: "我的", imageName: "tabbar_profile")
+        let vcs = ViewControllerAdaptive()
+        for vc in vcs.viewControllers {
+            createChildViewController(vcName: vc.vcName, title: vc.title, imageName: vc.imageName)
+        }
     }
     
     // MARK: - 初始化控制器

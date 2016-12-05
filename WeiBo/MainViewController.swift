@@ -29,8 +29,7 @@ class MainViewController: UITabBarController {
     // MARK: - 初始化控制器
     private func createChildViewController(vcName: String, title: String, imageName: String) {
         // <WeiBo.HomeViewController: 0x7fe26a506de0>
-        guard let module = Bundle.main.infoDictionary?[String(kCFBundleExecutableKey)] as? String else { return }
-        guard let vcClass = NSClassFromString("\(module).\(vcName)") else { return }
+        guard let vcClass = NSClassFromString("\(WeiBo.module).\(vcName)") else { return }
         
         let vcType = vcClass as! UIViewController.Type
         let vc = vcType.init()

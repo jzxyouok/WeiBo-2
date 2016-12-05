@@ -19,20 +19,26 @@ class MainViewController: UITabBarController {
     
     // MARK: - 添加子控件
     private func addChildViewControllers() {
-        createChildViewController(controller: HomeViewController(), title: "首页", imageName: "tabbar_home")
-        createChildViewController(controller: MessageViewController(), title: "消息", imageName: "tabbar_message_center")
-        createChildViewController(controller: DiscoverViewController(), title: "广场", imageName: "tabbar_discover")
-        createChildViewController(controller: ProfileViewController(), title: "我的", imageName: "tabbar_profile")
-        
+        print(HomeViewController())
+        createChildViewController(vcName: "HomeViewController", title: "首页", imageName: "tabbar_home")
+        createChildViewController(vcName: "MessageViewController", title: "消息", imageName: "tabbar_message_center")
+        createChildViewController(vcName: "DiscoverViewController", title: "广场", imageName: "tabbar_discover")
+        createChildViewController(vcName: "ProfileViewController", title: "我的", imageName: "tabbar_profile")
     }
     
     // MARK: - 初始化控制器
-    private func createChildViewController(controller: UIViewController, title: String, imageName: String) {
-        controller.title = title
-        controller.tabBarItem.image = UIImage(named: "\(imageName)")
-        controller.tabBarItem.selectedImage = UIImage(named: "\(imageName)_selected")
+    private func createChildViewController(vcName: String, title: String, imageName: String) {
+        // <WeiBo.HomeViewController: 0x7fe26a506de0>
+        guard let module = Bundle.main.infoDictionary?[String(kCFBundleExecutableKey)] as? String else { return }
+        guard let vcClass = NSClassFromString("\(module).\(vcName)") else { return }
         
-        addChildViewController(controller)
+        let vcType = vcClass as! UIViewController.Type
+        let vc = vcType.init()
+        
+        vc.title = title
+        vc.tabBarItem.image = UIImage(named: "\(imageName)")
+        vc.tabBarItem.selectedImage = UIImage(named: "\(imageName)_selected")
+        addChildViewController(vc)
     }
 
     override func didReceiveMemoryWarning() {

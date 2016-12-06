@@ -21,8 +21,8 @@
                     <connections>
                         <segue destination="4EK-R8-g68" kind="relationship" relationship="viewControllers" id="CwH-p4-v6b"/>
                         <segue destination="l4D-R1-15U" kind="relationship" relationship="viewControllers" id="Zc2-Dn-rfg"/>
-                        <segue destination="s9l-bX-iYR" kind="relationship" relationship="viewControllers" id="6QO-nI-UZc"/>
                         <segue destination="AqD-MN-uhY" kind="relationship" relationship="viewControllers" id="xkE-Ji-oAN"/>
+                        <segue destination="lFh-94-oBP" kind="relationship" relationship="viewControllers" id="6QO-nI-UZc"/>
                         <segue destination="H8o-lv-lhq" kind="relationship" relationship="viewControllers" id="9CM-Ov-GK5"/>
                     </connections>
                 </tabBarController>
@@ -34,7 +34,7 @@
         <scene sceneID="iOU-vF-smE">
             <objects>
                 <viewControllerPlaceholder storyboardName="Home" id="4EK-R8-g68" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="首页" image="tabbar_home" id="5Y5-Ym-AHh"/>
+                    <tabBarItem key="tabBarItem" title="Item" id="5Y5-Ym-AHh"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xPl-Gc-aQP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -44,7 +44,7 @@
         <scene sceneID="DGh-XY-YHR">
             <objects>
                 <viewControllerPlaceholder storyboardName="Message" id="l4D-R1-15U" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="消息" image="tabbar_message_center" id="vLT-PR-fhj"/>
+                    <tabBarItem key="tabBarItem" title="Item" id="vLT-PR-fhj"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TNl-zB-l6a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -54,37 +54,40 @@
         <scene sceneID="XCC-HU-9Zy">
             <objects>
                 <viewControllerPlaceholder storyboardName="Discover" id="AqD-MN-uhY" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="发现" image="tabbar_discover" id="Ucp-DB-m1H"/>
+                    <tabBarItem key="tabBarItem" title="Item" id="Ucp-DB-m1H"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f9n-x3-nFk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1042" y="1092"/>
         </scene>
+        <!--Item-->
+        <scene sceneID="ldF-Iu-CVe">
+            <objects>
+                <viewController id="lFh-94-oBP" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2Gq-Rz-7Am"/>
+                        <viewControllerLayoutGuide type="bottom" id="hUj-kd-lyh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gfy-7s-euh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="wtt-sX-JZu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KXA-TU-kDq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-881" y="972"/>
+        </scene>
         <!--Profile-->
         <scene sceneID="1KZ-rX-Klg">
             <objects>
                 <viewControllerPlaceholder storyboardName="Profile" id="H8o-lv-lhq" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="我的" image="tabbar_profile" id="ooe-Z5-qMT"/>
+                    <tabBarItem key="tabBarItem" title="Item" id="ooe-Z5-qMT"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dG8-jW-Fkb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1043" y="1007"/>
         </scene>
-        <!--Plus-->
-        <scene sceneID="8VH-99-5BC">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Plus" id="s9l-bX-iYR" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" id="58T-Iw-e0S"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="c4w-v3-yTv" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-881" y="972"/>
-        </scene>
     </scenes>
-    <resources>
-        <image name="tabbar_discover" width="30" height="30"/>
-        <image name="tabbar_home" width="30" height="30"/>
-        <image name="tabbar_message_center" width="30" height="30"/>
-        <image name="tabbar_profile" width="30" height="30"/>
-    </resources>
 </document>

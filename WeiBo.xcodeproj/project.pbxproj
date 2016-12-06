@@ -24,6 +24,7 @@
 		8346BA931DF6FD2C002F1FDE /* Message.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8346BA921DF6FD2C002F1FDE /* Message.storyboard */; };
 		8346BA961DF6FD3E002F1FDE /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8346BA941DF6FD3E002F1FDE /* Discover.storyboard */; };
 		8346BA981DF6FD4D002F1FDE /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8346BA971DF6FD4D002F1FDE /* Profile.storyboard */; };
+		8346BA9B1DF6FE36002F1FDE /* Plus.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8346BA991DF6FE36002F1FDE /* Plus.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		8346BA921DF6FD2C002F1FDE /* Message.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Message.storyboard; sourceTree = "<group>"; };
 		8346BA951DF6FD3E002F1FDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Discover.storyboard; sourceTree = "<group>"; };
 		8346BA971DF6FD4D002F1FDE /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		8346BA9A1DF6FE36002F1FDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Plus.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				8319F22C1DF5C6840056A182 /* ProfileViewController.swift */,
 				83215A701DF5BD83008DAE2C /* AppDelegate.swift */,
 				83215A741DF5BD83008DAE2C /* Main.storyboard */,
+				8346BA991DF6FE36002F1FDE /* Plus.storyboard */,
 				8346BA971DF6FD4D002F1FDE /* Profile.storyboard */,
 				8346BA941DF6FD3E002F1FDE /* Discover.storyboard */,
 				8346BA921DF6FD2C002F1FDE /* Message.storyboard */,
@@ -161,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				83215A7B1DF5BD83008DAE2C /* LaunchScreen.storyboard in Resources */,
+				8346BA9B1DF6FE36002F1FDE /* Plus.storyboard in Resources */,
 				8346BA911DF6FD0C002F1FDE /* Home.storyboard in Resources */,
 				8346BA981DF6FD4D002F1FDE /* Profile.storyboard in Resources */,
 				8319F2311DF5D3550056A182 /* vc_name.json in Resources */,
@@ -223,6 +227,14 @@
 				8346BA951DF6FD3E002F1FDE /* Base */,
 			);
 			name = Discover.storyboard;
+			sourceTree = "<group>";
+		};
+		8346BA991DF6FE36002F1FDE /* Plus.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8346BA9A1DF6FE36002F1FDE /* Base */,
+			);
+			name = Plus.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

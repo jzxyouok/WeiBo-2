@@ -12,7 +12,7 @@
         <!--消息-->
         <scene sceneID="vhb-KC-mYb">
             <objects>
-                <tableViewController id="j04-g6-vMm" sceneMemberID="viewController">
+                <tableViewController id="j04-g6-vMm" customClass="MessageViewController" customModule="WeiBo" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="8dU-cm-ovm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -31,7 +31,7 @@
         <!--消息-->
         <scene sceneID="ImE-zf-rUV">
             <objects>
-                <navigationController id="9Gy-SE-zmv" customClass="MessageViewController" customModule="WeiBo" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController id="9Gy-SE-zmv" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="消息" image="tabbar_message_center" selectedImage="tabbar_message_center_selected" id="WKW-ef-jQN"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="M1O-hL-nC9">

@@ -25,6 +25,10 @@
 		8346BA961DF6FD3E002F1FDE /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8346BA941DF6FD3E002F1FDE /* Discover.storyboard */; };
 		8346BA981DF6FD4D002F1FDE /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8346BA971DF6FD4D002F1FDE /* Profile.storyboard */; };
 		8346BA9B1DF6FE36002F1FDE /* Plus.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8346BA991DF6FE36002F1FDE /* Plus.storyboard */; };
+		83B17ADA1DF858FC00688743 /* WeiBoBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B17AD91DF858FC00688743 /* WeiBoBarButtonItem.swift */; };
+		83B17ADC1DF85F4300688743 /* HomeTitleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B17ADB1DF85F4300688743 /* HomeTitleButton.swift */; };
+		83B9225E1DF83E5B006DBD1A /* GuestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B9225D1DF83E5B006DBD1A /* GuestView.swift */; };
+		83B922601DF83E6D006DBD1A /* GuestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83B9225F1DF83E6D006DBD1A /* GuestView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +52,10 @@
 		8346BA951DF6FD3E002F1FDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Discover.storyboard; sourceTree = "<group>"; };
 		8346BA971DF6FD4D002F1FDE /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		8346BA9A1DF6FE36002F1FDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Plus.storyboard; sourceTree = "<group>"; };
+		83B17AD91DF858FC00688743 /* WeiBoBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeiBoBarButtonItem.swift; sourceTree = "<group>"; };
+		83B17ADB1DF85F4300688743 /* HomeTitleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTitleButton.swift; sourceTree = "<group>"; };
+		83B9225D1DF83E5B006DBD1A /* GuestView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuestView.swift; sourceTree = "<group>"; };
+		83B9225F1DF83E6D006DBD1A /* GuestView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GuestView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,14 +88,18 @@
 		83215A6F1DF5BD83008DAE2C /* WeiBo */ = {
 			isa = PBXGroup;
 			children = (
+				83B17ADB1DF85F4300688743 /* HomeTitleButton.swift */,
+				8319F22E1DF5D16D0056A182 /* WeiBo.swift */,
+				83B17AD91DF858FC00688743 /* WeiBoBarButtonItem.swift */,
+				83B9225D1DF83E5B006DBD1A /* GuestView.swift */,
+				83B9225F1DF83E6D006DBD1A /* GuestView.xib */,
 				8319F2321DF5D5080056A182 /* WeiBoJSONSerialization.swift */,
 				8319F2341DF5D7210056A182 /* ViewControllerAdaptive.swift */,
-				8319F22E1DF5D16D0056A182 /* WeiBo.swift */,
-				8319F2241DF5C61A0056A182 /* MainViewController.swift */,
 				8319F2261DF5C62F0056A182 /* HomeViewController.swift */,
 				8319F2281DF5C6480056A182 /* MessageViewController.swift */,
 				8319F22A1DF5C6790056A182 /* DiscoverViewController.swift */,
 				8319F22C1DF5C6840056A182 /* ProfileViewController.swift */,
+				8319F2241DF5C61A0056A182 /* MainViewController.swift */,
 				83215A701DF5BD83008DAE2C /* AppDelegate.swift */,
 				83215A741DF5BD83008DAE2C /* Main.storyboard */,
 				8346BA991DF6FE36002F1FDE /* Plus.storyboard */,
@@ -166,6 +178,7 @@
 				83215A7B1DF5BD83008DAE2C /* LaunchScreen.storyboard in Resources */,
 				8346BA9B1DF6FE36002F1FDE /* Plus.storyboard in Resources */,
 				8346BA911DF6FD0C002F1FDE /* Home.storyboard in Resources */,
+				83B922601DF83E6D006DBD1A /* GuestView.xib in Resources */,
 				8346BA981DF6FD4D002F1FDE /* Profile.storyboard in Resources */,
 				8319F2311DF5D3550056A182 /* vc_name.json in Resources */,
 				83215A781DF5BD83008DAE2C /* Assets.xcassets in Resources */,
@@ -183,10 +196,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				8319F2251DF5C61A0056A182 /* MainViewController.swift in Sources */,
+				83B17ADA1DF858FC00688743 /* WeiBoBarButtonItem.swift in Sources */,
+				83B9225E1DF83E5B006DBD1A /* GuestView.swift in Sources */,
 				83215A711DF5BD83008DAE2C /* AppDelegate.swift in Sources */,
 				8319F22B1DF5C6790056A182 /* DiscoverViewController.swift in Sources */,
 				8319F22F1DF5D16D0056A182 /* WeiBo.swift in Sources */,
 				8319F22D1DF5C6840056A182 /* ProfileViewController.swift in Sources */,
+				83B17ADC1DF85F4300688743 /* HomeTitleButton.swift in Sources */,
 				8319F2331DF5D5080056A182 /* WeiBoJSONSerialization.swift in Sources */,
 				8319F2351DF5D7210056A182 /* ViewControllerAdaptive.swift in Sources */,
 				8319F2271DF5C62F0056A182 /* HomeViewController.swift in Sources */,

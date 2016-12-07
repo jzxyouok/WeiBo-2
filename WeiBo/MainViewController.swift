@@ -21,10 +21,10 @@ class MainViewController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // 设置全局的 UITabBarItem 颜色
         UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.lightGray], for: .normal)
         UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.orange], for: .selected)
+        UINavigationBar.appearance().tintColor = .orange
         
         composeButton.center = CGPoint(x: tabBar.center.x, y: tabBar.bounds.size.height * 0.5)
         composeButton.addTarget(self, action: #selector(clickComposeButton(_:)), for: .touchUpInside)

@@ -12,7 +12,7 @@
         <!--首页-->
         <scene sceneID="loI-Zt-hIe">
             <objects>
-                <tableViewController id="RbM-en-Stc" sceneMemberID="viewController">
+                <tableViewController id="RbM-en-Stc" customClass="HomeViewController" customModule="WeiBo" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="73T-ev-FHG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -31,7 +31,7 @@
         <!--首页-->
         <scene sceneID="rk7-Qu-Jic">
             <objects>
-                <navigationController id="nh1-7K-qUF" customClass="HomeViewController" customModule="WeiBo" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController id="nh1-7K-qUF" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="首页" image="tabbar_home" selectedImage="tabbar_home_selected" id="A8Y-Ds-TAH"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ymp-OQ-4ZD">

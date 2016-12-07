@@ -12,7 +12,7 @@
         <!--发现-->
         <scene sceneID="2hX-wg-0dU">
             <objects>
-                <tableViewController id="pLc-Ri-GhJ" sceneMemberID="viewController">
+                <tableViewController id="pLc-Ri-GhJ" customClass="DiscoverViewController" customModule="WeiBo" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Ej6-4t-7jl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -31,7 +31,7 @@
         <!--发现-->
         <scene sceneID="5Bo-DW-snT">
             <objects>
-                <navigationController id="Nwq-Yn-Crw" customClass="DiscoverViewController" customModule="WeiBo" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController id="Nwq-Yn-Crw" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="发现" image="tabbar_discover" selectedImage="tabbar_discover_selected" id="IJ1-cA-Mcg"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ypl-Bc-RnP">

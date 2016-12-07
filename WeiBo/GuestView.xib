@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GuestView" customModule="WeiBo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="visitordiscover_feed_image_smallicon" translatesAutoresizingMaskIntoConstraints="NO" id="AMp-pA-mBJ">
+                    <rect key="frame" x="100" y="120" width="175" height="175"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="visitordiscover_feed_mask_smallicon" translatesAutoresizingMaskIntoConstraints="NO" id="60M-VD-auw">
+                    <rect key="frame" x="0.0" y="110" width="375" height="175"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="visitordiscover_feed_image_house" translatesAutoresizingMaskIntoConstraints="NO" id="mEO-Nc-M9v">
+                    <rect key="frame" x="141" y="160" width="94" height="90"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rMI-FA-fKA">
+                    <rect key="frame" x="129" y="337" width="117" height="39"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="39" id="UZ6-X8-jTI"/>
+                        <constraint firstAttribute="width" constant="117" id="mVx-Bi-vgg"/>
+                    </constraints>
+                    <state key="normal" title="去关注" backgroundImage="userinfo_relationship_button_background">
+                        <color key="titleColor" red="0.98039215686274506" green="0.50980392156862742" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="highlighted" backgroundImage="userinfo_relationship_button_highlighted"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="关注一些人，回这里看看有什么惊喜" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bn5-I1-odi">
+                    <rect key="frame" x="74" y="290" width="228" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="228.5" id="zdB-KJ-6aW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="mEO-Nc-M9v" firstAttribute="top" secondItem="AMp-pA-mBJ" secondAttribute="top" constant="40" id="Aic-of-S7h"/>
+                <constraint firstItem="rMI-FA-fKA" firstAttribute="top" secondItem="bn5-I1-odi" secondAttribute="bottom" constant="30" id="GHN-t4-ou2"/>
+                <constraint firstItem="60M-VD-auw" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="110" id="Nxw-Ey-GD7"/>
+                <constraint firstItem="AMp-pA-mBJ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="SkS-Oo-6qk"/>
+                <constraint firstItem="60M-VD-auw" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="doJ-CI-524"/>
+                <constraint firstItem="bn5-I1-odi" firstAttribute="top" secondItem="mEO-Nc-M9v" secondAttribute="bottom" constant="40" id="hcg-f7-Jfq"/>
+                <constraint firstAttribute="trailing" secondItem="60M-VD-auw" secondAttribute="trailing" id="inE-6t-hNy"/>
+                <constraint firstItem="mEO-Nc-M9v" firstAttribute="centerX" secondItem="60M-VD-auw" secondAttribute="centerX" id="m9S-vv-LIw"/>
+                <constraint firstItem="AMp-pA-mBJ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="120" id="oWJ-Wj-EDW"/>
+                <constraint firstItem="bn5-I1-odi" firstAttribute="centerX" secondItem="mEO-Nc-M9v" secondAttribute="centerX" id="r9t-TO-2Gb"/>
+                <constraint firstItem="rMI-FA-fKA" firstAttribute="centerX" secondItem="bn5-I1-odi" secondAttribute="centerX" id="urN-uX-3Du"/>
+            </constraints>
+            <connections>
+                <outlet property="feedImageView" destination="AMp-pA-mBJ" id="YIk-xl-QSh"/>
+                <outlet property="feedLabel" destination="bn5-I1-odi" id="Kd5-vv-yqr"/>
+                <outlet property="followButton" destination="rMI-FA-fKA" id="RzU-4z-akh"/>
+            </connections>
+            <point key="canvasLocation" x="25.5" y="51.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="userinfo_relationship_button_background" width="11" height="7"/>
+        <image name="userinfo_relationship_button_highlighted" width="11" height="8"/>
+        <image name="visitordiscover_feed_image_house" width="94" height="90"/>
+        <image name="visitordiscover_feed_image_smallicon" width="175" height="175"/>
+        <image name="visitordiscover_feed_mask_smallicon" width="175" height="175"/>
+    </resources>
+</document>

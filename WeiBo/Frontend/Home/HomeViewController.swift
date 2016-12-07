@@ -11,6 +11,7 @@ import UIKit
 class HomeViewController: UITableViewController {
     /// 标识是否登录
     let isSignIn = true
+    private lazy var popoverAnimate = PopoverAnimatedTransitioning()
     
     override func loadView() {
         isSignIn ? super.loadView() : loadGuestView()
@@ -25,8 +26,8 @@ class HomeViewController: UITableViewController {
     }
     
     private func addGuestItem() {
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "注册", style: .plain, target: self, action: #selector(signUp))
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "登录", style: .plain, target: self, action: #selector(signIn))
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "注册", style: .plain, target: self, action: #selector(clickSignUpButton(_:)))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "登录", style: .plain, target: self, action: #selector(clickSignInButton(_:)))
     }
     
     private func addUserItem() {
@@ -36,20 +37,34 @@ class HomeViewController: UITableViewController {
         let titleButton = HomeTitleButton()
         titleButton.setTitle("l1Dan", for: .normal)
         titleButton.setTitleColor( .black, for: .normal)
+        titleButton.addTarget(self, action: #selector(clickTitleButton(_:)), for: .touchUpInside)
         navigationItem.titleView = titleButton
     }
     
     /// 注册
-    @objc private func signUp() {
+    @objc private func clickSignUpButton(_ sender: UIButton) {
         
     }
     /// 登录
-    @objc private func signIn() {
+    @objc private func clickSignInButton(_ sender: UIButton) {
         
     }
     /// 登出
-    @objc private func signOut() {
+    @objc private func clickSignOutButton(_ sender: UIButton) {
         
+    }
+    /// 点击按钮
+    @objc private func clickTitleButton(_ sender: UIButton) {
+        sender.isSelected = !sender.isSelected
+        
+        let popover = PopoverViewController()
+        popover.modalPresentationStyle = .custom
+        popover.transitioningDelegate = popoverAnimate
+        popoverAnimate.coverButtonAction = {
+            sender.isSelected = false
+        }
+        
+        present(popover, animated: true)
     }
     
     override func viewDidLoad() {
@@ -60,16 +75,8 @@ class HomeViewController: UITableViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
+
+
+
+

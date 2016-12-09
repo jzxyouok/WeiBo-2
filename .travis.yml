@@ -1,0 +1,23 @@
+language: objective-c
+osx_image: xcode8.1
+xcode_sdk: iphonesimulator10.0
+xcode_project: WeiBo.xcodeproj
+env:
+    global:
+        - FRAMEWORK_NAME=Weibo
+    before_install:
+      - rvm get head
+      - brew update
+      - brew outdated carthage || brew upgrade carthage
+    before_script:
+      - carthage bootstarp
+    before_deploy:
+      - carthage build --no-skip-current
+      - carthage archive $FRAMEWORK_NAME
+    deploy:
+        provider: releases
+        file: WeiBo.framework.zip
+        skip_cleanup: true
+        on:
+          repo: l1Dan/WeiBo
+          tags: true

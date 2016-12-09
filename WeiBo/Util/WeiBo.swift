@@ -7,7 +7,10 @@
 //
 
 import Foundation
-struct WeiBo {
+
+struct WeiBo { }
+
+extension WeiBo {
     /// 获取微博项目的 Module
     ///
     /// - Returns: Plist 中的 Executable 名字
@@ -26,4 +29,13 @@ struct WeiBo {
     static var redirect: String {
         return "http://l1dan.com"
     }
+}
+
+extension WeiBo {
+    /// OAuth2的authorize接口
+    static let authorizeApi = "https://api.weibo.com/oauth2/authorize"
+    /// OAuth2的access_token接口
+    static let accessTockApi = "https://api.weibo.com/oauth2/access_token"
+    /// 获取用户信息
+    static let usersShowApi = "https://api.weibo.com/2/users/show.json"
 }

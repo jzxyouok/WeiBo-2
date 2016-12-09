@@ -11,6 +11,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WelcomeViewController" customModule="WeiBo" customModuleProvider="target">
             <connections>
+                <outlet property="avatorImageView" destination="fzd-gb-ZAq" id="IYe-rV-nVV"/>
+                <outlet property="avatorImageViewTopConstraint" destination="SYt-ZF-hl8" id="i7u-Z8-Cvm"/>
+                <outlet property="avatorLabel" destination="iY6-43-Tjl" id="lWg-Nx-xG0"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,7 +21,45 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Default_splashscreen_background" translatesAutoresizingMaskIntoConstraints="NO" id="BU2-V4-eEO">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Default_splashscreen_logo" translatesAutoresizingMaskIntoConstraints="NO" id="5Ca-Cl-PT0">
+                    <rect key="frame" x="125" y="565" width="125" height="72"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avator_default" translatesAutoresizingMaskIntoConstraints="NO" id="fzd-gb-ZAq">
+                    <rect key="frame" x="148" y="350" width="78" height="78"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="78" id="YZV-as-v0c"/>
+                        <constraint firstAttribute="width" constant="78" id="u4Y-3x-c9V"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="欢迎回来" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iY6-43-Tjl">
+                    <rect key="frame" x="158.5" y="448" width="57.5" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="BU2-V4-eEO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Gsg-ox-jvc"/>
+                <constraint firstAttribute="bottom" secondItem="5Ca-Cl-PT0" secondAttribute="bottom" constant="30" id="JzZ-Ct-Vhq"/>
+                <constraint firstAttribute="bottom" secondItem="BU2-V4-eEO" secondAttribute="bottom" id="OWe-wl-HC9"/>
+                <constraint firstItem="iY6-43-Tjl" firstAttribute="top" secondItem="fzd-gb-ZAq" secondAttribute="bottom" constant="20" id="Q1i-dJ-3xU"/>
+                <constraint firstItem="fzd-gb-ZAq" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="350" id="SYt-ZF-hl8"/>
+                <constraint firstItem="BU2-V4-eEO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Vhu-ga-nda"/>
+                <constraint firstItem="iY6-43-Tjl" firstAttribute="centerX" secondItem="fzd-gb-ZAq" secondAttribute="centerX" id="YTu-M5-rQ1"/>
+                <constraint firstItem="fzd-gb-ZAq" firstAttribute="centerX" secondItem="BU2-V4-eEO" secondAttribute="centerX" id="d9c-EY-p8z"/>
+                <constraint firstAttribute="trailing" secondItem="BU2-V4-eEO" secondAttribute="trailing" id="hGf-MQ-aMA"/>
+                <constraint firstItem="5Ca-Cl-PT0" firstAttribute="centerX" secondItem="BU2-V4-eEO" secondAttribute="centerX" id="kRs-7c-YOT"/>
+            </constraints>
             <point key="canvasLocation" x="24.5" y="51.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="Default_splashscreen_background" width="2" height="2"/>
+        <image name="Default_splashscreen_logo" width="125" height="72"/>
+        <image name="avator_default" width="48" height="48"/>
+    </resources>
 </document>

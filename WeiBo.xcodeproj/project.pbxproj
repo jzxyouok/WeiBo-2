@@ -31,7 +31,6 @@
 		839DC41B1DFAF8BE00E894EF /* OAuthRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839DC41A1DFAF8BE00E894EF /* OAuthRequest.swift */; };
 		839DC41D1DFAFE5900E894EF /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839DC41C1DFAFE5900E894EF /* ApiManager.swift */; };
 		839DC41F1DFB049E00E894EF /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839DC41E1DFB049E00E894EF /* Account.swift */; };
-		839DC4211DFB08D800E894EF /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 839DC4201DFB08D800E894EF /* SwiftyJSON.framework */; };
 		839DC4241DFB1D8F00E894EF /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839DC4221DFB1D8F00E894EF /* WelcomeViewController.swift */; };
 		839DC4251DFB1D8F00E894EF /* WelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 839DC4231DFB1D8F00E894EF /* WelcomeViewController.xib */; };
 		83B17ADA1DF858FC00688743 /* WeiBoBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B17AD91DF858FC00688743 /* WeiBoBarButtonItem.swift */; };
@@ -42,11 +41,6 @@
 		83B17AF01DF874D100688743 /* PopoverAnimatedTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B17AEF1DF874D100688743 /* PopoverAnimatedTransitioning.swift */; };
 		83B9225E1DF83E5B006DBD1A /* GuestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B9225D1DF83E5B006DBD1A /* GuestView.swift */; };
 		83B922601DF83E6D006DBD1A /* GuestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83B9225F1DF83E6D006DBD1A /* GuestView.xib */; };
-		D6A401D11DFA518700DE2069 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A401D01DFA518700DE2069 /* UIKit.framework */; };
-		D6A401D61DFA519A00DE2069 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A401D21DFA519A00DE2069 /* Alamofire.framework */; };
-		D6A401D71DFA519A00DE2069 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A401D31DFA519A00DE2069 /* Kingfisher.framework */; };
-		D6A401D81DFA519A00DE2069 /* PKHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A401D41DFA519A00DE2069 /* PKHUD.framework */; };
-		D6A401D91DFA519A00DE2069 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A401D51DFA519A00DE2069 /* SnapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,7 +49,7 @@
 		8319F2281DF5C6480056A182 /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
 		8319F22A1DF5C6790056A182 /* DiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
 		8319F22C1DF5C6840056A182 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		8319F22E1DF5D16D0056A182 /* WeiBo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WeiBo.swift; path = ../Util/WeiBo.swift; sourceTree = "<group>"; };
+		8319F22E1DF5D16D0056A182 /* WeiBo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeiBo.swift; sourceTree = "<group>"; };
 		8319F2301DF5D3550056A182 /* vc_name.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = vc_name.json; sourceTree = "<group>"; };
 		8319F2321DF5D5080056A182 /* WeiBoJSONSerialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeiBoJSONSerialization.swift; sourceTree = "<group>"; };
 		8319F2341DF5D7210056A182 /* ViewControllerAdaptive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerAdaptive.swift; sourceTree = "<group>"; };
@@ -76,7 +70,6 @@
 		839DC41A1DFAF8BE00E894EF /* OAuthRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuthRequest.swift; sourceTree = "<group>"; };
 		839DC41C1DFAFE5900E894EF /* ApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
 		839DC41E1DFB049E00E894EF /* Account.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
-		839DC4201DFB08D800E894EF /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 		839DC4221DFB1D8F00E894EF /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		839DC4231DFB1D8F00E894EF /* WelcomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WelcomeViewController.xib; sourceTree = "<group>"; };
 		83B17AD91DF858FC00688743 /* WeiBoBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeiBoBarButtonItem.swift; sourceTree = "<group>"; };
@@ -87,11 +80,6 @@
 		83B17AEF1DF874D100688743 /* PopoverAnimatedTransitioning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverAnimatedTransitioning.swift; sourceTree = "<group>"; };
 		83B9225D1DF83E5B006DBD1A /* GuestView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuestView.swift; sourceTree = "<group>"; };
 		83B9225F1DF83E6D006DBD1A /* GuestView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GuestView.xib; sourceTree = "<group>"; };
-		D6A401D01DFA518700DE2069 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		D6A401D21DFA519A00DE2069 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
-		D6A401D31DFA519A00DE2069 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
-		D6A401D41DFA519A00DE2069 /* PKHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PKHUD.framework; path = Carthage/Build/iOS/PKHUD.framework; sourceTree = "<group>"; };
-		D6A401D51DFA519A00DE2069 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +87,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				839DC4211DFB08D800E894EF /* SwiftyJSON.framework in Frameworks */,
-				D6A401D61DFA519A00DE2069 /* Alamofire.framework in Frameworks */,
-				D6A401D71DFA519A00DE2069 /* Kingfisher.framework in Frameworks */,
-				D6A401D81DFA519A00DE2069 /* PKHUD.framework in Frameworks */,
-				D6A401D91DFA519A00DE2069 /* SnapKit.framework in Frameworks */,
-				D6A401D11DFA518700DE2069 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,7 +98,6 @@
 			children = (
 				83215A6F1DF5BD83008DAE2C /* WeiBo */,
 				83215A6E1DF5BD83008DAE2C /* Products */,
-				D6A401CF1DFA518600DE2069 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,10 +112,10 @@
 		83215A6F1DF5BD83008DAE2C /* WeiBo */ = {
 			isa = PBXGroup;
 			children = (
-				839DC4171DFAEBD400E894EF /* Network */,
 				83B17ADD1DF8625300688743 /* Common */,
 				83B17ADF1DF8627800688743 /* Extension */,
 				83B17AE21DF862E600688743 /* Frontend */,
+				839DC4171DFAEBD400E894EF /* Network */,
 				83B17AE11DF862AB00688743 /* Support Files */,
 				83B17ADE1DF8626900688743 /* UIKit */,
 				83B17AE01DF8629600688743 /* Util */,
@@ -149,24 +130,24 @@
 				839DC4131DFAD76900E894EF /* OAuthViewController.swift */,
 				839DC4141DFAD76900E894EF /* OAuthViewController.xib */,
 			);
-			name = OAuth;
+			path = OAuth;
 			sourceTree = "<group>";
 		};
 		839DC4171DFAEBD400E894EF /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				839DC4181DFAEC2D00E894EF /* HTTPSession.swift */,
 				839DC41C1DFAFE5900E894EF /* ApiManager.swift */,
+				839DC4181DFAEC2D00E894EF /* HTTPSession.swift */,
 			);
-			name = Network;
+			path = Network;
 			sourceTree = "<group>";
 		};
 		83B17ADD1DF8625300688743 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				8319F22E1DF5D16D0056A182 /* WeiBo.swift */,
-				83215A701DF5BD83008DAE2C /* AppDelegate.swift */,
 				839DC41E1DFB049E00E894EF /* Account.swift */,
+				83215A701DF5BD83008DAE2C /* AppDelegate.swift */,
+				8319F22E1DF5D16D0056A182 /* WeiBo.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -208,11 +189,11 @@
 		83B17AE21DF862E600688743 /* Frontend */ = {
 			isa = PBXGroup;
 			children = (
-				839DC4111DFAD71A00E894EF /* OAuth */,
 				83B17AE61DF8632100688743 /* Discover */,
 				83B17AE41DF8631300688743 /* Home */,
 				83B17AE81DF8634600688743 /* Main */,
 				83B17AE51DF8631900688743 /* Message */,
+				839DC4111DFAD71A00E894EF /* OAuth */,
 				83B17AE71DF8632C00688743 /* Profile */,
 				83B17AE31DF8630000688743 /* Welcome */,
 			);
@@ -236,10 +217,10 @@
 			children = (
 				8346BA8F1DF6FD0C002F1FDE /* Home.storyboard */,
 				8319F2261DF5C62F0056A182 /* HomeViewController.swift */,
+				83B17AEF1DF874D100688743 /* PopoverAnimatedTransitioning.swift */,
 				83B17AED1DF8696100688743 /* PopoverPresentationController.swift */,
 				83B17AE91DF866BF00688743 /* PopoverViewController.swift */,
 				83B17AEA1DF866BF00688743 /* PopoverViewController.xib */,
-				83B17AEF1DF874D100688743 /* PopoverAnimatedTransitioning.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -280,19 +261,6 @@
 				8319F2341DF5D7210056A182 /* ViewControllerAdaptive.swift */,
 			);
 			path = Main;
-			sourceTree = "<group>";
-		};
-		D6A401CF1DFA518600DE2069 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				839DC4201DFB08D800E894EF /* SwiftyJSON.framework */,
-				D6A401D21DFA519A00DE2069 /* Alamofire.framework */,
-				D6A401D31DFA519A00DE2069 /* Kingfisher.framework */,
-				D6A401D41DFA519A00DE2069 /* PKHUD.framework */,
-				D6A401D51DFA519A00DE2069 /* SnapKit.framework */,
-				D6A401D01DFA518700DE2069 /* UIKit.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

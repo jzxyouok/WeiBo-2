@@ -56,10 +56,12 @@ extension OAuthViewController: UIWebViewDelegate {
                     ApiManager.usersShow(account: account) { // 请求用户信息
                         newAccount in
                         
-                        if newAccount != nil {
+                        if let newAccount = newAccount {
                             self.dismiss(animated: false) { // 页面跳转
                                 UIApplication.shared.keyWindow?.rootViewController = WelcomeViewController()
                             }
+                            // 归档
+                            newAccount.archiver()
                         } else {
                             HUD.flash(.label("获取用户信息失败!"), delay: 1.0)
                         }
@@ -91,14 +93,3 @@ extension OAuthViewController: UIWebViewDelegate {
         PKHUD.sharedHUD.hide()
     }
 }
-
-
-
-
-
-
-
-
-
-
-

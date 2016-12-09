@@ -25,6 +25,8 @@
 		8346BA961DF6FD3E002F1FDE /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8346BA941DF6FD3E002F1FDE /* Discover.storyboard */; };
 		8346BA981DF6FD4D002F1FDE /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8346BA971DF6FD4D002F1FDE /* Profile.storyboard */; };
 		8346BA9B1DF6FE36002F1FDE /* Plus.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8346BA991DF6FE36002F1FDE /* Plus.storyboard */; };
+		839DC4151DFAD76900E894EF /* OAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839DC4131DFAD76900E894EF /* OAuthViewController.swift */; };
+		839DC4161DFAD76900E894EF /* OAuthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 839DC4141DFAD76900E894EF /* OAuthViewController.xib */; };
 		83B17ADA1DF858FC00688743 /* WeiBoBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B17AD91DF858FC00688743 /* WeiBoBarButtonItem.swift */; };
 		83B17ADC1DF85F4300688743 /* HomeTitleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B17ADB1DF85F4300688743 /* HomeTitleButton.swift */; };
 		83B17AEB1DF866BF00688743 /* PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B17AE91DF866BF00688743 /* PopoverViewController.swift */; };
@@ -56,6 +58,8 @@
 		8346BA951DF6FD3E002F1FDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Discover.storyboard; sourceTree = "<group>"; };
 		8346BA971DF6FD4D002F1FDE /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		8346BA9A1DF6FE36002F1FDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Plus.storyboard; sourceTree = "<group>"; };
+		839DC4131DFAD76900E894EF /* OAuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuthViewController.swift; sourceTree = "<group>"; };
+		839DC4141DFAD76900E894EF /* OAuthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OAuthViewController.xib; sourceTree = "<group>"; };
 		83B17AD91DF858FC00688743 /* WeiBoBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeiBoBarButtonItem.swift; sourceTree = "<group>"; };
 		83B17ADB1DF85F4300688743 /* HomeTitleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTitleButton.swift; sourceTree = "<group>"; };
 		83B17AE91DF866BF00688743 /* PopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +110,15 @@
 			path = WeiBo;
 			sourceTree = "<group>";
 		};
+		839DC4111DFAD71A00E894EF /* OAuth */ = {
+			isa = PBXGroup;
+			children = (
+				839DC4131DFAD76900E894EF /* OAuthViewController.swift */,
+				839DC4141DFAD76900E894EF /* OAuthViewController.xib */,
+			);
+			name = OAuth;
+			sourceTree = "<group>";
+		};
 		83B17ADD1DF8625300688743 /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -152,6 +165,7 @@
 		83B17AE21DF862E600688743 /* Frontend */ = {
 			isa = PBXGroup;
 			children = (
+				839DC4111DFAD71A00E894EF /* OAuth */,
 				83B17AE61DF8632100688743 /* Discover */,
 				83B17AE41DF8631300688743 /* Home */,
 				83B17AE81DF8634600688743 /* Main */,
@@ -287,6 +301,7 @@
 				8346BA9B1DF6FE36002F1FDE /* Plus.storyboard in Resources */,
 				8346BA911DF6FD0C002F1FDE /* Home.storyboard in Resources */,
 				83B922601DF83E6D006DBD1A /* GuestView.xib in Resources */,
+				839DC4161DFAD76900E894EF /* OAuthViewController.xib in Resources */,
 				8346BA981DF6FD4D002F1FDE /* Profile.storyboard in Resources */,
 				8319F2311DF5D3550056A182 /* vc_name.json in Resources */,
 				83B17AEC1DF866BF00688743 /* PopoverViewController.xib in Resources */,
@@ -308,6 +323,7 @@
 				83B17ADA1DF858FC00688743 /* WeiBoBarButtonItem.swift in Sources */,
 				83B17AEB1DF866BF00688743 /* PopoverViewController.swift in Sources */,
 				83B9225E1DF83E5B006DBD1A /* GuestView.swift in Sources */,
+				839DC4151DFAD76900E894EF /* OAuthViewController.swift in Sources */,
 				83215A711DF5BD83008DAE2C /* AppDelegate.swift in Sources */,
 				8319F22B1DF5C6790056A182 /* DiscoverViewController.swift in Sources */,
 				8319F22F1DF5D16D0056A182 /* WeiBo.swift in Sources */,

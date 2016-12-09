@@ -10,7 +10,7 @@ import UIKit
 
 class HomeViewController: UITableViewController {
     /// 标识是否登录
-    let isSignIn = true
+    let isSignIn = false
     private lazy var popoverAnimate = PopoverAnimatedTransitioning()
     
     override func loadView() {
@@ -47,7 +47,10 @@ class HomeViewController: UITableViewController {
     }
     /// 登录
     @objc private func clickSignInButton(_ sender: UIButton) {
-        
+        // 包装一个导航栏
+        let vc = OAuthViewController()
+        let nav = UINavigationController(rootViewController: vc)
+        present(nav, animated: true)
     }
     /// 登出
     @objc private func clickSignOutButton(_ sender: UIButton) {

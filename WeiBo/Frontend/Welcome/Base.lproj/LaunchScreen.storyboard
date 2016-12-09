@@ -20,7 +20,32 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Default_splashscreen_background" translatesAutoresizingMaskIntoConstraints="NO" id="OHg-cq-ELe">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Default_splashscreen_slogan_new" translatesAutoresizingMaskIntoConstraints="NO" id="qaa-NH-avV">
+                                <rect key="frame" x="108" y="192" width="159" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="8iC-Si-oHS"/>
+                                    <constraint firstAttribute="width" constant="159" id="Zme-nQ-Mrf"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Default_splashscreen_logo" translatesAutoresizingMaskIntoConstraints="NO" id="K3i-d6-VFU">
+                                <rect key="frame" x="124.5" y="585" width="125" height="72"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="OHg-cq-ELe" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="C8b-p5-euH"/>
+                            <constraint firstAttribute="trailing" secondItem="OHg-cq-ELe" secondAttribute="trailing" id="OQe-Ov-Gvy"/>
+                            <constraint firstItem="K3i-d6-VFU" firstAttribute="centerX" secondItem="OHg-cq-ELe" secondAttribute="centerX" id="hGv-xa-Yah"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="K3i-d6-VFU" secondAttribute="bottom" constant="10" id="hVr-5J-BJX"/>
+                            <constraint firstItem="qaa-NH-avV" firstAttribute="centerX" secondItem="OHg-cq-ELe" secondAttribute="centerX" id="kDE-kv-1RR"/>
+                            <constraint firstItem="qaa-NH-avV" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="172" id="pkS-c0-IOB"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="OHg-cq-ELe" secondAttribute="bottom" id="wo5-LA-ofR"/>
+                            <constraint firstItem="OHg-cq-ELe" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="ych-qy-PeX"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -28,4 +53,9 @@
             <point key="canvasLocation" x="177" y="161"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Default_splashscreen_background" width="2" height="2"/>
+        <image name="Default_splashscreen_logo" width="125" height="72"/>
+        <image name="Default_splashscreen_slogan_new" width="318" height="101"/>
+    </resources>
 </document>

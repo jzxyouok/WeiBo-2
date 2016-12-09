@@ -33,6 +33,11 @@
 		83B17AF01DF874D100688743 /* PopoverAnimatedTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B17AEF1DF874D100688743 /* PopoverAnimatedTransitioning.swift */; };
 		83B9225E1DF83E5B006DBD1A /* GuestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B9225D1DF83E5B006DBD1A /* GuestView.swift */; };
 		83B922601DF83E6D006DBD1A /* GuestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83B9225F1DF83E6D006DBD1A /* GuestView.xib */; };
+		D6A401D11DFA518700DE2069 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A401D01DFA518700DE2069 /* UIKit.framework */; };
+		D6A401D61DFA519A00DE2069 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A401D21DFA519A00DE2069 /* Alamofire.framework */; };
+		D6A401D71DFA519A00DE2069 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A401D31DFA519A00DE2069 /* Kingfisher.framework */; };
+		D6A401D81DFA519A00DE2069 /* PKHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A401D41DFA519A00DE2069 /* PKHUD.framework */; };
+		D6A401D91DFA519A00DE2069 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A401D51DFA519A00DE2069 /* SnapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +69,11 @@
 		83B17AEF1DF874D100688743 /* PopoverAnimatedTransitioning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverAnimatedTransitioning.swift; sourceTree = "<group>"; };
 		83B9225D1DF83E5B006DBD1A /* GuestView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuestView.swift; sourceTree = "<group>"; };
 		83B9225F1DF83E6D006DBD1A /* GuestView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GuestView.xib; sourceTree = "<group>"; };
+		D6A401D01DFA518700DE2069 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D6A401D21DFA519A00DE2069 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		D6A401D31DFA519A00DE2069 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
+		D6A401D41DFA519A00DE2069 /* PKHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PKHUD.framework; path = Carthage/Build/iOS/PKHUD.framework; sourceTree = "<group>"; };
+		D6A401D51DFA519A00DE2069 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +81,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6A401D61DFA519A00DE2069 /* Alamofire.framework in Frameworks */,
+				D6A401D71DFA519A00DE2069 /* Kingfisher.framework in Frameworks */,
+				D6A401D81DFA519A00DE2069 /* PKHUD.framework in Frameworks */,
+				D6A401D91DFA519A00DE2069 /* SnapKit.framework in Frameworks */,
+				D6A401D11DFA518700DE2069 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +97,7 @@
 			children = (
 				83215A6F1DF5BD83008DAE2C /* WeiBo */,
 				83215A6E1DF5BD83008DAE2C /* Products */,
+				D6A401CF1DFA518600DE2069 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -223,6 +239,18 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
+		D6A401CF1DFA518600DE2069 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D6A401D21DFA519A00DE2069 /* Alamofire.framework */,
+				D6A401D31DFA519A00DE2069 /* Kingfisher.framework */,
+				D6A401D41DFA519A00DE2069 /* PKHUD.framework */,
+				D6A401D51DFA519A00DE2069 /* SnapKit.framework */,
+				D6A401D01DFA518700DE2069 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -233,6 +261,7 @@
 				83215A691DF5BD83008DAE2C /* Sources */,
 				83215A6A1DF5BD83008DAE2C /* Frameworks */,
 				83215A6B1DF5BD83008DAE2C /* Resources */,
+				D6A401CE1DFA500D00DE2069 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -298,6 +327,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D6A401CE1DFA500D00DE2069 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Kingfisher.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/PKHUD.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		83215A691DF5BD83008DAE2C /* Sources */ = {
@@ -471,6 +520,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Y7673FFN4G;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "WeiBo/Support Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.l1dan.WeiBo;
@@ -484,6 +537,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Y7673FFN4G;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "WeiBo/Support Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.l1dan.WeiBo;

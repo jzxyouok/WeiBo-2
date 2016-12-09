@@ -10,7 +10,14 @@ import UIKit
 
 class HomeViewController: UITableViewController {
     /// 标识是否登录
-    let isSignIn = false
+    lazy var isSignIn: Bool = {
+        if let account = Account.unArchiver() {
+            return account.isSigin
+        } else {
+            return false
+        }
+    }()
+    
     private lazy var popoverAnimate = PopoverAnimatedTransitioning()
     
     override func loadView() {

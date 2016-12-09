@@ -8,13 +8,15 @@
 
 import Foundation
 
-class Account: NSCoding {
+class Account: NSObject, NSCoding {
     static let shared = Account()
-    private init() {}
+    private override init() {
+        super.init()
+    }
     
     static let archiverPath: String = {
-        let userDocumentPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]
-        return userDocumentPath.appending("account.plist")
+        var userDocumentPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]
+        return (userDocumentPath as NSString).appendingPathComponent("account.dat")
     }()
     
     var token = ""
@@ -32,7 +34,7 @@ class Account: NSCoding {
         uid = decoder.decodeObject(forKey: "uid") as! String
         name = decoder.decodeObject(forKey: "name") as! String
         avatarLarge = decoder.decodeObject(forKey: "avatarLarge") as! String
-        expires = decoder.decodeObject(forKey: "expires") as! TimeInterval
+        expires = decoder.decodeDouble(forKey: "expires")
     }
     
     /// 归档
@@ -45,13 +47,13 @@ class Account: NSCoding {
     }
     
     /// 保存
-    func archiver() {
-        NSKeyedArchiver.archiveRootObject(self, toFile: Account.archiverPath)
+    static func archiver(account: Account) {
+        NSKeyedArchiver.archiveRootObject(account, toFile: Account.archiverPath)
     }
     
     /// 取出
     static func unArchiver() -> Account? {
-        guard let account = NSKeyedUnarchiver.unarchiveObject(withFile: Account.archiverPath) as? Account else  {
+        guard let account = NSKeyedUnarchiver.unarchiveObject(withFile: self.archiverPath) as? Account else  {
             return nil
         }
         

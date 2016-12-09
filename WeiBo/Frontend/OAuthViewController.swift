@@ -61,7 +61,7 @@ extension OAuthViewController: UIWebViewDelegate {
                                 UIApplication.shared.keyWindow?.rootViewController = WelcomeViewController()
                             }
                             // 归档
-                            newAccount.archiver()
+                            Account.archiver(account: newAccount)
                         } else {
                             HUD.flash(.label("获取用户信息失败!"), delay: 1.0)
                         }

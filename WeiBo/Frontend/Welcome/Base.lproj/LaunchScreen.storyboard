@@ -32,7 +32,7 @@
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Default_splashscreen_logo" translatesAutoresizingMaskIntoConstraints="NO" id="K3i-d6-VFU">
-                                <rect key="frame" x="124.5" y="585" width="125" height="72"/>
+                                <rect key="frame" x="124.5" y="565" width="125" height="72"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -40,7 +40,7 @@
                             <constraint firstItem="OHg-cq-ELe" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="C8b-p5-euH"/>
                             <constraint firstAttribute="trailing" secondItem="OHg-cq-ELe" secondAttribute="trailing" id="OQe-Ov-Gvy"/>
                             <constraint firstItem="K3i-d6-VFU" firstAttribute="centerX" secondItem="OHg-cq-ELe" secondAttribute="centerX" id="hGv-xa-Yah"/>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="K3i-d6-VFU" secondAttribute="bottom" constant="10" id="hVr-5J-BJX"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="K3i-d6-VFU" secondAttribute="bottom" constant="30" id="hVr-5J-BJX"/>
                             <constraint firstItem="qaa-NH-avV" firstAttribute="centerX" secondItem="OHg-cq-ELe" secondAttribute="centerX" id="kDE-kv-1RR"/>
                             <constraint firstItem="qaa-NH-avV" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="172" id="pkS-c0-IOB"/>
                             <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="OHg-cq-ELe" secondAttribute="bottom" id="wo5-LA-ofR"/>

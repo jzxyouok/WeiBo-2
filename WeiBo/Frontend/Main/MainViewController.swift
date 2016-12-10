@@ -23,7 +23,7 @@ class MainViewController: UITabBarController {
         super.viewDidLoad()
         // 设置全局的 UITabBarItem 颜色
         UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.lightGray], for: .normal)
-        UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.orange], for: .selected)
+        UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.darkGray], for: .selected)
         UINavigationBar.appearance().tintColor = .orange
         
         composeButton.center = CGPoint(x: tabBar.center.x, y: tabBar.bounds.size.height * 0.5)

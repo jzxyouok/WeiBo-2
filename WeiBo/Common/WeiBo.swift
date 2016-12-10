@@ -38,4 +38,19 @@ extension WeiBo {
     static let accessTockApi = "https://api.weibo.com/oauth2/access_token"
     /// 获取用户信息
     static let usersShowApi = "https://api.weibo.com/2/users/show.json"
+    /// 获取当前登录用户及其所关注用户的最新微博
+    static let friendsTimelineApi = "https://api.weibo.com/2/statuses/friends_timeline.json"
 }
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -17,6 +17,10 @@ enum Method: String {
 struct HTTPSession {
     static func send(url: URLConvertible, parameters: [String: Any]? = nil, method: Method = .post, completion: @escaping (JSON?) -> Void) {
         Alamofire.request(url, method: HTTPMethod(rawValue: method.rawValue)!, parameters: parameters).responseJSON { response in
+            debugPrint("--------> Response <--------")
+            debugPrint(response.request?.url?.absoluteString ?? "")
+            debugPrint(response.result.value ?? "")
+            
             if let data = response.data {
                 completion(JSON(data: data))
             } else {

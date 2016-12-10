@@ -9,12 +9,8 @@
 import SwiftyJSON
 
 struct ApiManager {
-    /// 请求 access token
-    ///
-    /// - Parameters:
-    ///   - request: 请求模型
-    ///   - completion: 去过请求失败 则 account 为 nil
-    static func accessToken(request: OAuthRequest, completion: @escaping (Account?) -> Void) {
+    /// OAuth2 的 access_token 接口
+    static func fetchAccessToken(request: OAuthRequest, completion: @escaping (Account?) -> Void) {
         let parameters = [
                 "code": request.code,
                 "client_id": request.appKey,
@@ -41,7 +37,8 @@ struct ApiManager {
         }
     }
     
-    static func usersShow(account: Account, completion: @escaping (Account?) -> Void) {
+    /// 获取用户信息
+    static func fetchUsersShow(account: Account, completion: @escaping (Account?) -> Void) {
         let paramaters = [
             "access_token": account.token,
             "uid": account.uid,
@@ -58,6 +55,13 @@ struct ApiManager {
             } else {
                 completion(nil)
             }
+        }
+    }
+    
+    /// 获取当前登录用户及其所关注用户的最新微博
+    static func fetchFriendsTimeline(account: Account, completion: @escaping ([Status]?) -> Void) {
+        HTTPSession.send(url: WeiBo.friendsTimelineApi, parameters: ["access_token": account.token], method: .get) {
+            completion(Status.statuses(json: $0))
         }
     }
 }

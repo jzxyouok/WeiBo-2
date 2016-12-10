@@ -7,22 +7,32 @@
 //
 
 import UIKit
+import PKHUD
 
 class HomeViewController: UITableViewController {
     /// 标识是否登录
-    lazy var isSignIn: Bool = {
+    fileprivate lazy var account: Account = {
         if let account = Account.unArchiver() {
-            return account.isSigin
+            return account
         } else {
-            return false
+            return Account.shared
         }
     }()
     
     private lazy var popoverAnimate = PopoverAnimatedTransitioning()
+    fileprivate var statuses = [Status]()
     
     override func loadView() {
-        isSignIn ? super.loadView() : loadGuestView()
-        isSignIn ? addUserItem() : addGuestItem()
+        if account.isSignIn {
+            super.loadView()
+            addUserItem()
+            
+            // Fetch data from network
+            loadFriendsTimelineData()
+        } else {
+            loadGuestView()
+            addGuestItem()
+        }
     }
     
     private func loadGuestView() {
@@ -87,6 +97,32 @@ class HomeViewController: UITableViewController {
     }
 }
 
+extension HomeViewController {
+    /// Fetch data from netwrok
+    fileprivate func loadFriendsTimelineData() {
+        ApiManager.fetchFriendsTimeline(account: account) { [weak self] statuses in
+            if let statuses = statuses {
+                self?.statuses = statuses
+                self?.tableView.reloadData()
+            } else {
+                HUD.flash(.label("微博数据请求失败"), delay: 2.0)
+            }
+        }
+    }
+}
+
+extension HomeViewController {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return statuses.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "HomeViewCell")!
+        let status = statuses[indexPath.row]
+        cell.textLabel?.text = status.text
+        return cell
+    }
+}
 
 
 

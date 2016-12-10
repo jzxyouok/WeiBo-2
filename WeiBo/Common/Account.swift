@@ -24,7 +24,7 @@ class Account: NSObject, NSCoding {
     var name = ""
     var avatarLarge = ""
     var expires: TimeInterval = 0.0
-    var isSigin: Bool {
+    var isSignIn: Bool {
         return Date.timeIntervalSinceReferenceDate > expires && expires > 0.0
     }
     
@@ -57,7 +57,7 @@ class Account: NSObject, NSCoding {
             return nil
         }
         
-        if account.isSigin {
+        if account.isSignIn {
             return account
         }
         

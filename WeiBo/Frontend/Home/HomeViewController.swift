@@ -89,6 +89,9 @@ class HomeViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tableView?.rowHeight = UITableViewAutomaticDimension
+        tableView?.estimatedRowHeight = 200
     }
 
     override func didReceiveMemoryWarning() {
@@ -117,9 +120,8 @@ extension HomeViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "HomeViewCell")!
-        let status = statuses[indexPath.row]
-        cell.textLabel?.text = status.text
+        let cell = tableView.dequeueReusableCell(withIdentifier: "HomeViewCell") as! HomeViewCell
+        cell.status = statuses[indexPath.row]
         return cell
     }
 }

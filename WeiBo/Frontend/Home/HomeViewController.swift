@@ -19,7 +19,7 @@ class HomeViewController: UITableViewController {
         }
     }()
     
-    private lazy var popoverAnimate = PopoverAnimatedTransitioning()
+    fileprivate lazy var popoverAnimate = PopoverAnimatedTransitioning()
     fileprivate var statuses = [Status]()
     
     override func loadView() {
@@ -35,19 +35,19 @@ class HomeViewController: UITableViewController {
         }
     }
     
-    private func loadGuestView() {
+    fileprivate func loadGuestView() {
         // 添加访客视图
         let guestView = GuestView.guestView()
         guestView.startRotateAnimation()
         view = guestView
     }
     
-    private func addGuestItem() {
+    fileprivate func addGuestItem() {
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "注册", style: .plain, target: self, action: #selector(clickSignUpButton(_:)))
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "登录", style: .plain, target: self, action: #selector(clickSignInButton(_:)))
     }
     
-    private func addUserItem() {
+    fileprivate func addUserItem() {
         navigationItem.leftBarButtonItem = UIBarButtonItem(imageName: "navigationbar_friendattention", target: self, action: nil)
         navigationItem.rightBarButtonItem = UIBarButtonItem(imageName: "navigationbar_icon_radar", target: self, action: nil)
         
@@ -59,22 +59,22 @@ class HomeViewController: UITableViewController {
     }
     
     /// 注册
-    @objc private func clickSignUpButton(_ sender: UIButton) {
+    @objc fileprivate func clickSignUpButton(_ sender: UIButton) {
         
     }
     /// 登录
-    @objc private func clickSignInButton(_ sender: UIButton) {
+    @objc fileprivate func clickSignInButton(_ sender: UIButton) {
         // 包装一个导航栏
         let vc = OAuthViewController()
         let nav = UINavigationController(rootViewController: vc)
         present(nav, animated: true)
     }
     /// 登出
-    @objc private func clickSignOutButton(_ sender: UIButton) {
+    @objc fileprivate func clickSignOutButton(_ sender: UIButton) {
         
     }
     /// 点击按钮
-    @objc private func clickTitleButton(_ sender: UIButton) {
+    @objc fileprivate func clickTitleButton(_ sender: UIButton) {
         sender.isSelected = !sender.isSelected
         
         let popover = PopoverViewController()
@@ -103,7 +103,7 @@ class HomeViewController: UITableViewController {
 extension HomeViewController {
     /// Fetch data from netwrok
     fileprivate func loadFriendsTimelineData() {
-        ApiManager.fetchFriendsTimeline(account: account) { [weak self] statuses in
+        ApiManager.fetchFriendsTimeline(account) { [weak self] statuses in
             if let statuses = statuses {
                 self?.statuses = statuses
                 self?.tableView.reloadData()

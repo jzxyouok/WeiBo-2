@@ -209,7 +209,7 @@
 				<key>LastSwiftUpdateCheck</key>
 				<string>0810</string>
 				<key>LastUpgradeCheck</key>
-				<string>0810</string>
+				<string>0820</string>
 				<key>ORGANIZATIONNAME</key>
 				<string>Chris</string>
 				<key>TargetAttributes</key>
@@ -220,6 +220,8 @@
 						<string>8.1</string>
 						<key>DevelopmentTeam</key>
 						<string>Y7673FFN4G</string>
+						<key>LastSwiftMigration</key>
+						<string>0820</string>
 						<key>ProvisioningStyle</key>
 						<string>Automatic</string>
 					</dict>
@@ -563,6 +565,8 @@
 				<string>YES</string>
 				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
 				<string>YES_ERROR</string>
+				<key>CLANG_WARN_SUSPICIOUS_MOVE</key>
+				<string>YES</string>
 				<key>CLANG_WARN_SUSPICIOUS_MOVES</key>
 				<string>YES</string>
 				<key>CLANG_WARN_UNREACHABLE_CODE</key>
@@ -658,6 +662,8 @@
 				<string>YES</string>
 				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
 				<string>YES_ERROR</string>
+				<key>CLANG_WARN_SUSPICIOUS_MOVE</key>
+				<string>YES</string>
 				<key>CLANG_WARN_SUSPICIOUS_MOVES</key>
 				<string>YES</string>
 				<key>CLANG_WARN_UNREACHABLE_CODE</key>

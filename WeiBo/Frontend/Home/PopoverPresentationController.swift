@@ -22,7 +22,7 @@ class PopoverPresentationController: UIPresentationController {
     }
     
     /// 添加一个蒙板
-    private func addCoverView() {
+    fileprivate func addCoverView() {
         guard let containerView = containerView else { return }
         
         let coverButton = UIButton(frame: containerView.bounds)
@@ -31,7 +31,7 @@ class PopoverPresentationController: UIPresentationController {
         containerView.insertSubview(coverButton, at: 0)
     }
     
-    @objc private func clickCoverButton(_ sender: UIButton) {
+    @objc fileprivate func clickCoverButton(_ sender: UIButton) {
         presentedViewController.dismiss(animated: true)
         
         if coverButtonAction != nil {

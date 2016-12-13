@@ -9,7 +9,7 @@
 import UIKit
 
 class MainViewController: UITabBarController {
-    private lazy var composeButton: UIButton = {
+    fileprivate lazy var composeButton: UIButton = {
         let composeButton = UIButton()
         composeButton.setBackgroundImage(UIImage(named: "tabbar_compose_button"), for: .normal)
         composeButton.setBackgroundImage(UIImage(named: "tabbar_compose_button_highlighted"), for: .highlighted)
@@ -32,7 +32,7 @@ class MainViewController: UITabBarController {
     }
     
     // MARK: - Compose button click
-    @objc private func clickComposeButton(_ sender: UIButton) {
+    @objc fileprivate func clickComposeButton(_ sender: UIButton) {
         print("clickComposeButton")
     }
     

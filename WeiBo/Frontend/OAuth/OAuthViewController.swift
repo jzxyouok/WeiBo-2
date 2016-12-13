@@ -26,11 +26,11 @@ class OAuthViewController: UIViewController {
     }
     
     // MARK: - 按钮点击
-    @objc private func clickCancelButton(_ sender: UIButton) {
+    @objc fileprivate func clickCancelButton(_ sender: UIButton) {
         dismiss(animated: true)
     }
     
-    @objc private func clickFillButton(_ sender: UIButton) {
+    @objc fileprivate func clickFillButton(_ sender: UIButton) {
         let js = "document.getElementById('userId').value='18898586260'; document.getElementById('passwd').value='';"
         webView.stringByEvaluatingJavaScript(from: js)
     }
@@ -50,10 +50,10 @@ extension OAuthViewController: UIWebViewDelegate {
         if containCodeString.contains("code=") {
             let code = containCodeString.components(separatedBy: "code=").last!
             let authRequest = OAuthRequest(code: code)
-            ApiManager.fetchAccessToken(request: authRequest) { // 请求 token
+            ApiManager.fetchAccessToken(authRequest) { // 请求 token
                 account in
                 if let account = account {
-                    ApiManager.fetchUsersShow(account: account) { // 请求用户信息
+                    ApiManager.fetchUsersShow(account) { // 请求用户信息
                         newAccount in
                         
                         if let newAccount = newAccount {
@@ -61,7 +61,7 @@ extension OAuthViewController: UIWebViewDelegate {
                                 UIApplication.shared.keyWindow?.rootViewController = WelcomeViewController()
                             }
                             // 归档
-                            Account.archiver(account: newAccount)
+                            Account.archiver(newAccount)
                         } else {
                             HUD.flash(.label("获取用户信息失败!"), delay: 1.0)
                         }

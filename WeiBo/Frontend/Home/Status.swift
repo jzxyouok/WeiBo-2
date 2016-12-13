@@ -19,7 +19,7 @@ class Status {
 
 extension Status {
     /// Parse
-    static func statuses(json: JSON?) -> [Status]? {
+    static func statuses(_ json: JSON?) -> [Status]? {
         guard let statuses = json?["statuses"].array else { return nil }
         return statuses.map { status -> Status in
             let createAt = status["created_at"].stringValue
@@ -33,7 +33,7 @@ extension Status {
             st.source = source
             st.mid = mid
             st.text = text
-            st.user = User.user(dict: user)
+            st.user = User.user(user)
                 
             return st
         }

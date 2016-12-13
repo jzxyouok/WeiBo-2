@@ -10,7 +10,7 @@ import Foundation
 
 class Account: NSObject, NSCoding {
     static let shared = Account()
-    private override init() {
+    fileprivate override init() {
         super.init()
     }
     
@@ -47,7 +47,7 @@ class Account: NSObject, NSCoding {
     }
     
     /// 保存
-    static func archiver(account: Account) {
+    static func archiver(_ account: Account) {
         NSKeyedArchiver.archiveRootObject(account, toFile: Account.archiverPath)
     }
     

@@ -71,9 +71,46 @@
                                         </label>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uAp-t9-cKh">
                                             <rect key="frame" x="0.0" y="128" width="375" height="40"/>
-                                            <color key="backgroundColor" red="0.26940538149999999" green="0.64624834310000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I7L-eO-lGc">
+                                                    <rect key="frame" x="0.0" y="0.0" width="125" height="40"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <state key="normal" title="转发" image="timeline_topic_icon_retweet">
+                                                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sw4-6d-yzc">
+                                                    <rect key="frame" x="125" y="0.0" width="125" height="40"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <state key="normal" title="评论" image="timeline_topic_icon_comment">
+                                                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V2L-NM-oSN">
+                                                    <rect key="frame" x="250" y="0.0" width="125" height="40"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <state key="normal" title="赞" image="timeline_topic_icon_like">
+                                                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                </button>
+                                            </subviews>
                                             <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="V2L-NM-oSN" secondAttribute="trailing" id="2hC-iT-lfV"/>
+                                                <constraint firstItem="Sw4-6d-yzc" firstAttribute="centerY" secondItem="uAp-t9-cKh" secondAttribute="centerY" id="CsZ-b0-XnV"/>
+                                                <constraint firstItem="V2L-NM-oSN" firstAttribute="height" secondItem="I7L-eO-lGc" secondAttribute="height" id="D81-o6-ICH"/>
+                                                <constraint firstItem="V2L-NM-oSN" firstAttribute="leading" secondItem="Sw4-6d-yzc" secondAttribute="trailing" id="DPg-KC-LNM"/>
+                                                <constraint firstItem="V2L-NM-oSN" firstAttribute="centerY" secondItem="uAp-t9-cKh" secondAttribute="centerY" id="FrK-gE-WMm"/>
+                                                <constraint firstItem="I7L-eO-lGc" firstAttribute="leading" secondItem="uAp-t9-cKh" secondAttribute="leading" id="Lx9-0U-Lud"/>
                                                 <constraint firstAttribute="height" constant="40" id="Mxe-JQ-n41"/>
+                                                <constraint firstItem="I7L-eO-lGc" firstAttribute="centerY" secondItem="uAp-t9-cKh" secondAttribute="centerY" id="VIB-qZ-Alz"/>
+                                                <constraint firstAttribute="bottom" secondItem="V2L-NM-oSN" secondAttribute="bottom" id="ZYN-te-Pgc"/>
+                                                <constraint firstAttribute="bottom" secondItem="I7L-eO-lGc" secondAttribute="bottom" id="ZfZ-Js-qbq"/>
+                                                <constraint firstItem="Sw4-6d-yzc" firstAttribute="leading" secondItem="I7L-eO-lGc" secondAttribute="trailing" id="b6H-n7-R13"/>
+                                                <constraint firstItem="V2L-NM-oSN" firstAttribute="width" secondItem="I7L-eO-lGc" secondAttribute="width" id="bwG-b8-kLX"/>
+                                                <constraint firstItem="I7L-eO-lGc" firstAttribute="top" secondItem="uAp-t9-cKh" secondAttribute="top" id="dKO-eb-LMK"/>
+                                                <constraint firstItem="Sw4-6d-yzc" firstAttribute="width" secondItem="I7L-eO-lGc" secondAttribute="width" id="djF-II-wpZ"/>
+                                                <constraint firstItem="V2L-NM-oSN" firstAttribute="top" secondItem="uAp-t9-cKh" secondAttribute="top" id="kOU-XZ-GYY"/>
+                                                <constraint firstItem="Sw4-6d-yzc" firstAttribute="height" secondItem="I7L-eO-lGc" secondAttribute="height" id="zNs-QC-RSP"/>
                                             </constraints>
                                         </view>
                                     </subviews>
@@ -147,5 +184,8 @@
         <image name="common_icon_membership" width="14" height="14"/>
         <image name="tabbar_home" width="30" height="30"/>
         <image name="tabbar_home_selected" width="30" height="30"/>
+        <image name="timeline_topic_icon_comment" width="12" height="12"/>
+        <image name="timeline_topic_icon_like" width="12" height="12"/>
+        <image name="timeline_topic_icon_retweet" width="12" height="12"/>
     </resources>
 </document>

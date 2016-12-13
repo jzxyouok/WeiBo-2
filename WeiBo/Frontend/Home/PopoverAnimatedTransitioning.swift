@@ -45,7 +45,7 @@ extension PopoverAnimatedTransitioning: UIViewControllerAnimatedTransitioning {
         }
     }
     
-    private func presented(using transitionContext: UIViewControllerContextTransitioning) {
+    fileprivate func presented(using transitionContext: UIViewControllerContextTransitioning) {
         let presentedView = transitionContext.view(forKey: UITransitionContextViewKey.to)
         
         transitionContext.containerView.addSubview(presentedView!)
@@ -59,7 +59,7 @@ extension PopoverAnimatedTransitioning: UIViewControllerAnimatedTransitioning {
         }
     }
     
-    private func dismissed(using transitionContext: UIViewControllerContextTransitioning) {
+    fileprivate func dismissed(using transitionContext: UIViewControllerContextTransitioning) {
         let dismissedView = transitionContext.view(forKey: UITransitionContextViewKey.from)
         
         UIView.animate(withDuration: transitionDuration(using: transitionContext), animations: {

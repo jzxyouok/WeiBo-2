@@ -16,7 +16,7 @@ class User {
     var verifiedType: Int = -1
     var mbrank: Int = 0
     
-    static func user(dict: [String: JSON]) -> User? {
+    static func user(_ dict: [String: JSON]) -> User? {
         if let screenName = dict["screen_name"]?.stringValue,
         let avatarLarge = dict["avatar_large"]?.stringValue,
         let gender = dict["gender"]?.stringValue,
